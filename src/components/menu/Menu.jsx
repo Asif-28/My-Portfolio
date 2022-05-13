@@ -1,24 +1,27 @@
 import "./menu.scss";
 
-import React from "react";
+import React, { useState } from "react";
+import { useRecoilState } from "recoil";
+import openNav from "../../atom/openMenu";
 
-function Menu({ openMenu, setOpenMenu }) {
+function Menu() {
+  const [openMenu, setOpenMenu] = useRecoilState(openNav);
   return (
     <div className={"menu " + (openMenu && "active")}>
       <ul>
-        <li>
+        <li onClick={() => setOpenMenu(false)}>
           <a href="#intro">Home</a>
         </li>
-        <li>
+        <li onClick={() => setOpenMenu(false)}>
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li>
+        <li onClick={() => setOpenMenu(false)}>
           <a href="#works">Works</a>
         </li>
-        <li>
+        <li onClick={() => setOpenMenu(false)}>
           <a href="#testimonials">Testimonial</a>
         </li>
-        <li>
+        <li onClick={() => setOpenMenu(false)}>
           <a href="#contact">Contact</a>
         </li>
       </ul>

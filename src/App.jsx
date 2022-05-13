@@ -7,13 +7,14 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
+import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
+import ReactFullpage from "@fullpage/react-fullpage";
 
 function App() {
-  const [openMenu, setOpenMenu] = useState(false);
   return (
     <div className="app">
-      <Topbar openMenu={openMenu} setopenMenu={setOpenMenu} />
-      <Menu openMenu={openMenu} setopenMenu={setOpenMenu} />
+      <Topbar />
+      <Menu />
       <div className="section">
         <Intro />
         <Portfolio />

@@ -1,9 +1,12 @@
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
+import { useRecoilState } from "recoil";
+import openNav from "../../atom/openMenu";
 
-export default function Topbar({ openMenu, setOpenMenu }) {
+export default function Topbar() {
+  const [navOpen, setNavOpen] = useRecoilState(openNav);
   return (
-    <div className={"topbar " + (openMenu && "active")}>
+    <div className={"topbar " + (navOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
@@ -20,7 +23,12 @@ export default function Topbar({ openMenu, setOpenMenu }) {
         </div>
         {/* <h1>Hello</h1> */}
         <div className="right">
-          <div className="hamburger" onClick={() => setOpenMenu(!openMenu)}>
+          <div
+            className="hamburger"
+            onClick={() => {
+              setNavOpen(!navOpen);
+            }}
+          >
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>

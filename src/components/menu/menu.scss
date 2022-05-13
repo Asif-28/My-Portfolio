@@ -11,8 +11,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  font-size: medium;
 
   &.active {
     right: 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 30px;
+      font-weight: 300;
+      color: #fff;
+      width: 70%;
+
+      li {
+        margin-bottom: 30px;
+        a {
+          font-size: inherit;
+          color: inherit;
+          text-decoration: none;
+        }
+        &:hover {
+          font-weight: 500;
+        }
+      }
+    }
   }
 }
