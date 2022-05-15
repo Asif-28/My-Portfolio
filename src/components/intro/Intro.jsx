@@ -31,7 +31,8 @@ export default function Intro() {
         " <strong>Developer</strong> ",
         "Designer &copy;",
       ],
-      typeSpeed: 50,
+      typeSpeed: 60,
+      backDelay: 1000,
       backSpeed: 50,
       loop: true,
     };
