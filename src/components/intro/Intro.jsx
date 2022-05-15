@@ -33,6 +33,7 @@ export default function Intro() {
       ],
       typeSpeed: 50,
       backSpeed: 50,
+      loop: true,
     };
 
     // elRef refers to the <span> rendered below
@@ -49,7 +50,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="" alt="profile" />
+          <img src="assets/man.png" alt="profile" />
         </div>
       </div>
 
@@ -61,7 +62,8 @@ export default function Intro() {
             Freelancer <span style={{ whiteSpace: "pre" }} ref={el}></span>
           </h3>
           <a href="#portfolio" id="">
-            <ExpandMoreIcon fontSize="large" />
+            <img className="downArrow" src="assets/down.png" alt="" />
+            {/* <ExpandMoreIcon className="Expanded" fontSize="large" /> */}
           </a>
         </div>
       </div>
