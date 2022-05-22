@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .intro {
   background-color: #fff;
   display: flex;
@@ -9,7 +10,7 @@
     .imgContainer {
       height: 700px;
       width: 700px;
-      background-color: lightgray;
+      background-color: black;
       border-radius: 50%;
       display: flex;
       justify-content: center;
