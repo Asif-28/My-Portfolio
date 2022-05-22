@@ -8,22 +8,24 @@
 
   h1 {
     font-size: 50px;
+    margin-bottom: 50px;
   }
   ul {
     margin: 10px;
     padding: 0;
     list-style: none;
     display: flex;
+    margin-bottom: 30px;
   }
   .container {
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     .item {
       width: 240px;
-      height: 170px;
+      height: 160px;
       border-radius: 20px;
       border: 1px solid greenyellow;
       margin: 10px 20px;
