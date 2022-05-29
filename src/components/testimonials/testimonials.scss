@@ -24,14 +24,15 @@
       flex-direction: column;
       justify-content: space-around;
       padding: 20px;
+      transition: all 0.5s ease;
 
       &.featured {
         width: 300px;
         height: 65%;
-        margin: 0 34px;
+        margin: 0 32px;
       }
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
 
       .top {

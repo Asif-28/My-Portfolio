@@ -1,4 +1,5 @@
 import "./intro.scss";
+
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
