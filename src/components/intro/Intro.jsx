@@ -4,6 +4,7 @@ import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Button } from "@mui/material";
 
 export default function Intro() {
   const textRef = useRef();
@@ -63,6 +64,7 @@ export default function Intro() {
           <h3>
             Freelancer <span style={{ whiteSpace: "pre" }} ref={el}></span>
           </h3>
+          <button>Contact me </button>
           <a href="#portfolio" id="">
             <img className="downArrow" src="assets/down.png" alt="" />
             {/* <ExpandMoreIcon className="Expanded" fontSize="large" /> */}

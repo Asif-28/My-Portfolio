@@ -18,7 +18,11 @@ export default function Topbar() {
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>asif.a.7277@gmail.com</span>
+            <span>
+              <a className="mail" href="mailto:asif.a.7277@gmail.com">
+                asif.a.7277@gmail.com
+              </a>
+            </span>
           </div>
         </div>
         {/* <h1>Hello</h1> */}
