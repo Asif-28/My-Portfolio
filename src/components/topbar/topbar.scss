@@ -81,6 +81,10 @@
         }
         span {
           color: $mainColor;
+
+          .mail {
+            color: $mainColor;
+          }
         }
       }
     }

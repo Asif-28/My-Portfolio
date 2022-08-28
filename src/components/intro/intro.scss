@@ -12,15 +12,16 @@
     overflow: hidden;
 
     .imgContainer {
-      margin-top: 5px;
-      height: 700px;
-      width: 700px;
+      margin-top: 25px;
+      height: 600px;
+      width: 600px;
       background-color: black;
-      border-radius: 50%;
+      border-radius: 10%;
       display: flex;
       justify-content: center;
       align-items: flex-end;
       float: right;
+      border: 10px solid #15f4ee;
 
       @include mobile {
         align-items: flex-start;

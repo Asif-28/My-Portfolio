@@ -8,7 +8,7 @@ function Menu() {
   const [openMenu, setOpenMenu] = useRecoilState(openNav);
   return (
     <div className={"menu " + (openMenu && "active")}>
-      <ul>
+      <ul className="menu-items">
         <li onClick={() => setOpenMenu(false)}>
           <a href="#intro">Home</a>
         </li>
