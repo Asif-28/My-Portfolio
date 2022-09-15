@@ -25,14 +25,18 @@
 
       @include mobile {
         align-items: flex-start;
+        max-width: 80vw;
+        border: none;
+        border-radius: 12px;
       }
     }
     img {
       height: 90%;
-      border-radius: 8%;
+      border-radius: 6%;
 
       @include mobile {
         height: 50%;
+        border-radius: 10px;
       }
     }
   }
@@ -81,10 +85,21 @@
         text-transform: uppercase;
         letter-spacing: 2px;
         border-radius: 100px;
+        @include mobile {
+          margin-top: 10px;
+          max-width: 200px;
+          font-size: 1rem;
+          padding: 10px;
+        }
 
         &:hover {
           box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
           text-shadow: 0 0 0 5px #15f4ee, 0 0 0 5px #15f4ee;
+          @include mobile {
+            &:hover {
+              box-shadow: 0 3px 30px 0 #15f4ee inset, 0 3px 30px 0 #15f4ee;
+            }
+          }
         }
       }
     }
@@ -97,6 +112,11 @@
       width: 50px;
       height: 50px;
       animation: arrowBlink 2s infinite;
+      @include mobile {
+        width: 30px;
+        height: 30px;
+        animation: arrowBlink 2s infinite;
+      }
     }
     @keyframes arrowBlink {
       100% {
