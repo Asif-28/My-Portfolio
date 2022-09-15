@@ -72,6 +72,7 @@
           font-size: 20px;
         }
       }
+
       button {
         background-color: $mainColor;
         margin-top: 40px;
@@ -103,7 +104,13 @@
         }
       }
     }
-    a {
+    .contact-btn {
+      padding: 36px;
+      @include mobile {
+        margin-bottom: 20px;
+      }
+    }
+    .arrow-nav {
       position: absolute;
       bottom: 10px;
       left: 40%;

@@ -64,8 +64,13 @@ export default function Intro() {
           <h3>
             Freelancer <span style={{ whiteSpace: "pre" }} ref={el}></span>
           </h3>
-          <button>Contact me </button>
-          <a href="#portfolio" id="">
+          <div className="contact-btn">
+            <a href="#contact">
+              <button>Contact me</button>
+            </a>
+          </div>
+
+          <a className="arrow-nav" href="#portfolio" id="">
             <img className="downArrow" src="assets/down.png" alt="" />
             {/* <ExpandMoreIcon className="Expanded" fontSize="large" /> */}
           </a>
