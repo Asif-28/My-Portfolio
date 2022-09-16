@@ -44,7 +44,7 @@ export default function Testimonials() {
             </div>
             <div className="centre">{d.desc}</div>
             <div className="bottom">
-              <h3>{d.name}</h3>
+              <h3 className="title">{d.name}</h3>
               <h4>{d.title}</h4>
             </div>
           </div>
