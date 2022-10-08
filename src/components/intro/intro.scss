@@ -2,6 +2,7 @@
 .intro {
   background-color: #fff;
   display: flex;
+
   @include mobile {
     flex-direction: column;
     align-items: center;
@@ -11,25 +12,31 @@
     overflow: hidden;
 
     .imgContainer {
-      height: 700px;
-      width: 700px;
+      margin-top: 25px;
+      height: 600px;
+      width: 600px;
       background-color: black;
-      border-radius: 50%;
+      border-radius: 10%;
       display: flex;
       justify-content: center;
       align-items: flex-end;
       float: right;
+      border: 10px solid #15f4ee;
 
       @include mobile {
         align-items: flex-start;
+        max-width: 80vw;
+        border: none;
+        border-radius: 12px;
       }
     }
     img {
       height: 90%;
-      border-radius: 8%;
+      border-radius: 6%;
 
       @include mobile {
         height: 50%;
+        border-radius: 10px;
       }
     }
   }
@@ -65,8 +72,45 @@
           font-size: 20px;
         }
       }
+
+      button {
+        background-color: $mainColor;
+        margin-top: 40px;
+        color: #15f4ee;
+        font-size: 1.5rem;
+        padding: 20px;
+        max-width: 250px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 5px solid #15f4ee;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 100px;
+        @include mobile {
+          margin-top: 10px;
+          max-width: 200px;
+          font-size: 1rem;
+          padding: 10px;
+        }
+
+        &:hover {
+          box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+          text-shadow: 0 0 0 5px #15f4ee, 0 0 0 5px #15f4ee;
+          @include mobile {
+            &:hover {
+              box-shadow: 0 3px 30px 0 #15f4ee inset, 0 3px 30px 0 #15f4ee;
+            }
+          }
+        }
+      }
     }
-    a {
+    .contact-btn {
+      padding: 36px;
+      @include mobile {
+        margin-bottom: 20px;
+      }
+    }
+    .arrow-nav {
       position: absolute;
       bottom: 10px;
       left: 40%;
@@ -75,6 +119,11 @@
       width: 50px;
       height: 50px;
       animation: arrowBlink 2s infinite;
+      @include mobile {
+        width: 30px;
+        height: 30px;
+        animation: arrowBlink 2s infinite;
+      }
     }
     @keyframes arrowBlink {
       100% {

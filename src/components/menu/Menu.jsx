@@ -8,18 +8,26 @@ function Menu() {
   const [openMenu, setOpenMenu] = useRecoilState(openNav);
   return (
     <div className={"menu " + (openMenu && "active")}>
-      <ul>
+      <ul className="menu-items">
         <li onClick={() => setOpenMenu(false)}>
-          <a href="#intro">Home</a>
+          <a className="tag" href="#intro">
+            Home
+          </a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-          <a href="#portfolio">Portfolio</a>
+          <a className="tag" href="#portfolio">
+            Portfolio
+          </a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-          <a href="#works">Works</a>
+          <a className="tag" href="#works">
+            Works
+          </a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
-          <a href="#testimonials">Testimonial</a>
+          <a className="tag" href="#testimonials">
+            Projects
+          </a>
         </li>
         <li onClick={() => setOpenMenu(false)}>
           <a href="#contact">Contact</a>

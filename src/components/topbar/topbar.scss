@@ -2,7 +2,7 @@
 .topbar {
   width: 100%;
   height: 70px;
-  background-color: #fff;
+  background-color: $mainColor;
   color: $mainColor;
   position: fixed;
   top: 0;
@@ -21,7 +21,7 @@
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
-        color: inherit;
+        color: #fff;
         margin-right: 40px;
       }
       .itemContainer {
@@ -35,10 +35,16 @@
         .icon {
           font-size: 18px;
           margin-right: 5px;
+          color: #fff;
         }
         span {
           font-size: 15px;
           font-weight: 500;
+          color: #fff;
+          .mail {
+            color: #fff;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -54,7 +60,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $mainColor;
+          background-color: #fff;
           transform-origin: left;
           transition: all 0.3s ease;
         }
@@ -62,19 +68,38 @@
     }
   }
   &.active {
-    background-color: $mainColor;
-    color: #fff;
+    background-color: #fff;
+
+    color: $mainColor;
+    .left {
+      .logo {
+        color: $mainColor;
+      }
+      .itemContainer {
+        .icon {
+          color: $mainColor;
+        }
+        span {
+          color: $mainColor;
+
+          .mail {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+
     .hamburger {
       span {
         &:first-child {
-          background-color: #fff;
+          background-color: $mainColor;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: #fff;
+          background-color: $mainColor;
           transform: rotate(-45deg);
         }
       }
